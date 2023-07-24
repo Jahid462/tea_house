@@ -1,27 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        first: '#F00',
+                        second: '#FF8938',
+                        primary_color: '#1C1C1C',
+                        second_color: '#777',
+                    }
+                }
             }
-          }
         }
-      </script>
-
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-      <script src="https://cdn.tailwindcss.com"></script>
+    </script>
 
 </head>
-<body>
-    
+
+<body class="manrope">
+
+    <!---------------- Banner Section ------------------->
+
+    <header class="container px-8 mx-auto flex flex-col md:flex-row justify-center items-center gap-5 mt-16">
+        <div class="flex-1 space-y-5">
+            <h1 class="font-extrabold text-4xl md:text-5xl lg:text-7xl text-primary_color">It's good tea time at The Tea House</h1>
+            <p class="font-medium text-clifford text-second_color">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="btn text-white bg-gradient-to-r from-first to-second rounded-lg">Explore More<i class="fa-solid fa-arrow-trend-up"></i></button>
+        </div>
+        <div class="flex-1 relative">
+            <img src="./images/banner.png" alt="">
+            <div class="flex gap-3 justify-center items-center bg-white px-2 py-2 lg:px-6 lg:py-4 rounded-lg absolute bottom-2 lg:bottom-3 left-8 lg:left-20 drop-shadow-lg">
+                <div class="text-amber-400">
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-extrabold text-3xl ">5.00</h3>
+                    <p class="text-second_color">Trust Pilot Ratings</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
